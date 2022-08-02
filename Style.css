@@ -1,0 +1,925 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@200;300&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --pry-color:rgba(110, 34, 34, 0.938);
+    --h1--font: 'Open Sans', 'sans-serif';
+    --p--font:  'Poppins', sans-serif;
+}
+
+body {
+    height: 98vh;
+    min-width: 100%;
+}
+
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 8px 2px 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    outline: 1px solid rgb(184, 182, 182);
+  }
+
+  
+  
+  /* The sticky class is added to the header with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+/* Layout  */
+
+.nav-scrolled {
+    --text: #333;
+    --text-inverse: #f4f4f4;
+    --background: #f4f4f4;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  }
+
+nav{
+    width:100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em;
+    line-height: 1;
+    font-family:'Raleway', sans-serif;
+
+}
+
+.main-container{
+    display: block;
+    width: 100%;
+    height: 886px;
+    background: url(Assets/Images/Development.jpg);
+    background-repeat: none;
+    background-size: cover;
+
+}
+.cont-sm{
+position: absolute;
+color:rgb(255, 255, 255);
+ width: 40%;
+ margin: 0 100px ;
+ margin-top: 180px;
+ height: 250px;
+ justify-content: space-evenly;
+}
+.cont-sm > *{
+    margin-bottom: 50px;
+}
+
+.container {
+    padding: 30px 0px;
+    background-color: rgb(255, 255, 255);
+    color: var(--pry-color);
+}
+
+.cont-lg {
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+.main-container-2 {
+    background:url(Assets/Images/Pattern.png);
+    background: cover;
+    background-repeat: none;
+}
+
+.consult-container {
+    display: block;
+    width: 100%;
+    height: 25rem;
+    background:url(Assets/Images/Consulting.jpg);
+    background-size:cover;
+    background-repeat: none;
+    position: relative;
+    opacity: 0.8;
+}
+
+.Credence{
+    background: url(Assets/Images/pattern3.jpg);
+    background-size: cover;
+    background-repeat: none;
+    height: 500px;
+}
+
+
+.consult-services {
+    padding: 1% 6%;
+    width:355px;
+    height:10rem;
+}
+
+.consult-services > * {
+    margin: 50px 0;
+
+}
+.services{
+    color: black;
+}
+
+.service-item {
+    border-radius: 5px;
+}
+
+.service-item > *{
+padding:10px;
+}
+.about-us {
+    margin-top: 60px;
+    width: 100%;
+    color:black;
+}
+.about-us > *{
+    margin: 10px 100px;
+
+}
+
+.footer-container {
+    padding: 60px 110px;
+    width: 100%;
+    color: var(--pry-color);
+}
+
+/* grid conatiner */
+
+.grid {
+    display: grid;
+    grid-template-columns: 0.7fr 0.7fr 0.7fr 0.7fr 0.7fr;
+}
+.grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:240px;
+}
+
+.grid-22{
+    display: grid;
+    grid-template-columns: 520px 400px;
+    gap:90px;
+}
+.grid-4 {
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    gap: 3rem;
+}
+.grid-3 {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap:50px ;
+    justify-content: center;    
+}
+
+.team {
+    background-image: url(Assets/Images/stance_team.jpg);
+    background-repeat: none;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+.team-container {
+    margin:60px  0;  
+    margin-left: 145px;
+}
+
+.team-container > * {
+    margin-bottom: 20px;
+}
+
+.team-details {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 4.2rem;
+}
+
+.picture {
+    width: 250px;
+    height: 240px;
+    border-radius: 200px;
+    background-color: rgb(224, 223, 223);
+}
+
+.consultant {
+    width: 320px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Client-container{
+    width: 100%;
+    justify-content: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.7;
+}
+.credence-container, .credence-svg {
+    margin-top: 40px;
+}
+.credence-container> * {
+    padding: 30px 0;
+    margin-left: 100px;
+}
+
+.contact-container {
+    padding: 60px 0;
+    align-items: center;
+    justify-content: center;
+    background:url(Assets/Images/Pattern.png);
+    background: cover;
+    background-repeat: none;
+}
+.about-container {
+    position: relative; 
+    display: block;
+    height: 400px;
+    width: 100%;
+}
+
+.about-container::before {    
+      content: "";
+      background:url(Assets/Images/Team.jpg);
+      background-size: cover;
+      background-repeat: none;  
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.65;
+}
+.header-text {
+    align-items: center;
+    justify-content: start;
+    height: 410px;
+    padding-left: 40px;
+    width: 800px;
+    display: flex;
+}
+/* #who-we-are, #what-we-do {
+    display: block;
+} */
+
+
+/* card */
+.service-item{
+width: 500px;
+height: 450px;
+padding: 30px;
+justify-content: space-between;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.service-item:hover{
+    padding: 25px;
+    background-color:rgb(233, 233, 233);
+    box-shadow: none;
+}
+.service-item span:hover{
+    margin-left: 6px;
+}
+
+.consult-type{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px;
+    width: 450px;
+    display: flex;
+    line-height: 1;
+    justify-content: space-between;
+}
+.credence-svg img {
+    width: 300px;
+    height: 300px;
+    filter: invert(7%) sepia(67%) saturate(5276%) hue-rotate(1deg) brightness(107%) contrast(108%);
+}
+
+.locate-us>*, .footer-container ul> *{
+    padding: 15px 0 ;
+}
+
+.social-media ul li {
+    width: 290px;
+}
+.social-media ul li i {
+    padding-right: 10px;
+    color: var(--pry-color);
+}
+.contact-info-1{
+    border: 2px solid rgb(214, 214, 214);
+}
+.info {
+    padding: 40px 50px;
+    height: 550px;
+}
+.location-map ul li {
+    margin-bottom: 30px;
+}
+
+.w-text {
+    width:1000px;
+    border: 1px solid rgb(199, 199, 199);
+    padding: 70px;
+    border-radius: 5px;
+}
+.W-question-bar>* {
+    margin: 20px 0;
+}
+
+.W-question-bar {
+    display: flex;
+    margin: 40px 0;
+    margin-left: 200px;
+    flex-direction: column;
+   
+}
+
+
+/* Components  */
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.copyright span {
+    font-size: 12px;
+    font-weight: 100;
+}
+span{
+    font-family: var(--h1--font);
+    font-size: 16px;
+    font-weight: bold;
+}
+h2,h4, h3 {
+    font-family: var(--h1--font);
+    font-size: 19px ;
+}
+.services  h1 {
+    font-size: 20px;
+    font-weight: 420;
+}
+.cont-lg h2 {
+    padding: 4rem;
+    text-align: center;
+    color:rgb(172, 172, 172);
+}
+ h2 {
+    padding: 1rem 50px;
+    color:rgb(172, 172, 172);
+}
+
+.team-container h4 {
+    color:rgb(172, 172, 172);
+}
+
+.team-container h3 {
+    font-size: 21px;
+    font-weight: 560;
+}
+.consultant h3 {
+    font-size: 18px;
+}
+h1 {
+    font-size: 50px;
+    font-family: var(--h1--font);
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+h4 {
+    font-size: 17px;
+    letter-spacing: 0.8px;
+}
+
+p {
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-family: var(--p--font);
+}
+.service-item p {
+    height: 180px;
+}
+
+.service-item span a {
+    color:black;
+}
+.about-us h2{
+    text-align:left;
+    padding: 0;
+    font-size: 15px;
+}
+
+.about-us h1{
+    font-size: 20px;
+}
+
+.footer-container h3{
+    padding-bottom:18px;
+    border-bottom: 1px solid rgb(133, 133, 133);
+    color: var(--pry-color);
+}
+
+.footer-color {
+    color: #000;
+    font-family: var(--p--font);
+}
+
+.footer-color p:hover,
+ .footer-color li:hover {
+    color:var(--pry-color);
+}
+
+.info h4 {
+    padding-bottom: 30px;
+}
+.info ul li{
+    margin-bottom: 30px;
+}
+.info ul li input {
+    padding: 15px;
+    width: 400px;  
+    border-radius: 5px; 
+    border: 2px solid rgb(214, 214, 214);
+    font-family: var(--p--font);
+    background:none;
+}
+.info ul li .message {
+    padding: 0 15px;
+    padding-top: 15px;
+    padding-bottom: 120px;
+}   
+.header-text h3 {
+    position:relative;
+    font-size: 28px;
+    color: black;
+}
+
+/*  Navigation style
+_________________________________________________
+_________________________________________________ */
+
+ul {
+    list-style: none;
+}
+
+li, .locate-us p, .footer-color a{
+    font-size: 14px;
+}
+nav ul{
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: flex;
+    line-height: 1;
+    list-style: none;
+    justify-content: space-evenly;
+    line-height: 2.3;
+}
+    /* margin-right: 10px; */
+.nav-link {
+    text-decoration: none;
+    padding: 1rem;
+    color: rgb(0, 0, 0);
+    font-size:14.5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.nav-list li:nth-child(6) {
+    padding-left: 44px;
+}
+
+.nav-link:hover {
+    color: rgba(133, 27, 27, 0.938);
+}
+.nav-link-style:hover {
+    color: rgba(133, 27, 27, 0.938);
+    transition: all .4s ease;
+    font-size: 16px;
+}
+
+.nav-link-style:hover > .sub-menu {
+    transform: rotate(180deg);
+    padding-right:7px;
+    transition: all .3s ease;
+}
+
+
+/* drop-down Menu */
+.drop-menu:hover .drop-down{
+    opacity: 1;
+    visibility: visible;
+    transition: all .3s eaase;
+    z-index: 1;
+}
+
+.drop-down-list:hover {
+    background-color: rgba(133, 27, 27, 0.938);
+    transition: all .3s ease;
+}
+
+.drop-down-list a {
+    text-decoration: none;
+    padding: 0.7rem;
+    color: rgb(0, 0, 0);
+    font-size:16px;
+}
+.drop-down-list a:hover {
+    color: #fff
+}
+
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-family:var(--h1--font);
+    font-size: 15px;
+
+}
+button a {
+    color:#fff;
+}
+
+.consult-type a{
+    color:#000;
+    display: flex;
+    width:800px;
+    justify-content: space-between;
+}
+.drop-down {
+    position: absolute;
+    top:2.5rem;
+    padding-top: 10.5px;
+    width: 270px;
+    flex-direction: column;
+    background-color:rgb(255, 255, 255);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    text-align: left;
+}
+
+.drop-down-list {
+    padding: 5px 0;
+    width: 100%;
+    border-radius: 2px;
+
+}
+
+.footer-color a:hover {
+    color:var(--pry-color);
+}
+
+/* Buttons
+__________________________________
+___________________________________*/
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 50px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(202, 195, 195); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px 24px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  .fa-angle-up{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #myBtn:hover {
+   background-color:rgb(114, 37, 37); /* Add a dark-grey background on hover */
+  }
+
+.btn {
+    padding: 11px;
+    background-color: var(--pry-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn:hover, #form-button:hover {
+    background-color: rgba(155, 41, 41, 0.938);
+}
+
+.main-btn{
+    padding: 18px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.main-btn:hover {
+    padding: 17px;
+}
+.toggle-menu-btn,
+#click{
+    display: none;
+}
+
+
+
+#form-button {
+    background: rgb(197, 197, 197);
+    color:rgb(255, 255, 255);
+}
+
+ #what_we_do {
+    display: block;
+}
+
+#who_we_are {
+    display: none;
+}
+
+#btn1 {
+    background-color: white;
+    color: #000;
+}
+
+/* Icons  */
+
+i {
+    padding-left: 10px;
+}
+
+.service-item .fa-solid {
+    color: var(--pry-color);
+}
+.service-icon {
+    text-align: center;
+}
+
+
+img{
+    width: 195px;
+    height: 45px;
+}
+
+.client-list img{
+    width: 216px;
+    height:160px;
+}
+.consult-type> i {
+    display: inline;
+    padding: 0;
+}
+.consult-type> i:hover {
+    color: var(--pry-color);
+}
+.consult-type:hover{
+    background-color: rgb(248, 245, 245);
+}
+
+.location-address li i {
+    margin-bottom: 12px;
+}
+
+/* Responsive Layouts */
+
+@media screen and (max-width: 900px) {
+    nav {
+        padding: 0.5rem 1rem;
+        position: relative;
+        z-index: 1;
+    }
+    .nav-list {
+        top: 0;
+        float:right;
+        bottom: 0;
+        flex-direction: column;
+        background-color:rgb(163, 163, 163);
+        padding:  0 30px;
+        min-height: 100vh;
+        left: -100%;
+        width: 80%;                                                                                             
+        position:fixed;  
+        padding-bottom: 200px;
+    
+    }
+    .nav-link-style{
+        justify-content: space-evenly;
+    }
+
+    .nav-list >li {
+        border-bottom: 1px solid ;
+    }
+
+    .nav-list li:nth-child(5){
+        padding: 0;
+    }
+
+    #nav-btn {
+        border-bottom:none;
+    }
+
+
+    .drop-down {
+        top:0px;
+        width:320px;
+        display: none;
+        margin-bottom: 4px;
+        position: relative;
+    }
+   .grid{
+       grid-template-columns: auto ;
+       grid-gap: 3px;
+   }
+   .grid-2 {
+       grid-template-columns: auto;
+       grid-gap:0;
+       text-align: center;
+   }
+
+   .grid-22 {
+       grid-template-columns: 330px;
+       gap:70px;
+   }
+
+   p {
+       font-size: 14px;
+   }
+
+   .info {
+       padding: 40px 25px;
+   }
+   .info ul li input {
+       width: 270px;
+   }
+   .Client-container {
+       padding: 40px 2px;
+   }
+   .service-item {
+       width: 330px;
+   }
+   .consult-services{
+       padding: 10px;
+   }
+   .consult-type {
+       width: 340px;
+   }
+   .social-media ul li {
+    width: 270px;
+}
+
+
+    .grid-3 {
+        grid-template-columns: auto;
+        grid-gap:20px ;
+    }
+
+    .grid-4 {
+        grid-template-columns: 0.3fr;
+        grid-gap:3px;
+        margin: 0;
+    }
+
+    .team-details {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 3rem;
+    }
+
+    .team {
+        background-size:cover;
+        background-repeat: none;
+        height: 200px;
+    
+    }
+
+    .team-container {
+        margin:60px  0;  
+        margin-left: 29px;
+    }
+
+    .footer-container {
+        width: 280px;
+        padding-left: 30px;
+    
+    }
+
+    .Credence {
+        height: 900px;
+        width:100%;
+    }
+    .credence-container{
+        margin-left: 0px;
+    }
+    .credence-container> * {
+        padding: 20px 0;
+        margin-left: 0;
+    }
+
+    .about-us > *{
+        margin: 10px 30px;
+    }
+
+
+
+    .drop-down-list {
+        margin: 1px;
+        width: 290px
+    }
+
+    nav li:hover > ul{
+        display: block;
+        background: none;
+        right:5px;
+    }
+
+    .toggle-menu-btn{
+        display: flex;
+        float: left;
+    }
+
+    #click:checked ~ .nav-list {
+        left:0%;
+    }
+
+    .close-menu{
+        justify-content: end;
+    }
+    .client-list img{
+        width: 170px;
+        height:110px;
+    }
+
+    img{
+        width: 150px;
+        height: 40px;
+    }
+
+    .main-container {
+        height: 600px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .cont-sm{
+        margin:0;
+        padding: 40px 30px;
+        width: 78%;
+    }
+    .cont-sm > *{
+        margin-bottom: 25px;
+    }
+    .social-media ul li {
+        width: 300px;
+    }
+    .header-text {
+        width: 300px;
+        padding-right: 7px;
+    }
+    
+    .w-text {
+        width: 290px;
+        border: 1px solid rgb(199, 199, 199);
+        padding: 40px;
+        border-radius: 5px;
+    }
+    .W-question-bar>* {
+        margin: 18px 0;
+    }
+    
+    .W-question-bar {
+        width:300px; 
+        display: flex;
+        padding: 0;
+        margin: 0;
+        margin-left: 30px;
+        flex-direction: column;
+    }
+
+}
