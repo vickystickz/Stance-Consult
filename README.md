@@ -7,4 +7,4 @@ They work with organizations to align their strategy, resources and workforce de
 
 ## Website Screenshot ##
 
-![Website screenshot](Assets/images/website-screenshot.png)
+![Website screenshot](https://github.com/vickystickz/Stance-Consult/Assets/images/website-screenshot.png)
