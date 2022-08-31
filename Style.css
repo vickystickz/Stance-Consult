@@ -150,7 +150,7 @@ padding:10px;
 }
 
 .footer-container {
-    padding: 60px 110px;
+    padding: 60px 20px;
     width: 100%;
     color: var(--pry-color);
 }
@@ -174,12 +174,12 @@ padding:10px;
 }
 .grid-4 {
     display: grid;
-    grid-template-columns: 350px 350px 350px 350px;
-    gap: 3rem;
+    grid-template-columns: repeat(4, 200px);
+    gap: 10rem;
 }
 .grid-3 {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, auto);
     grid-gap:50px ;
     justify-content: center;    
 }
@@ -225,7 +225,7 @@ padding:10px;
 
 .Client-container{
     width: 100%;
-    justify-content: center;
+    align-items: center;
     padding: 40px 20px;
     margin-top: 20px;
     background-color: rgb(255, 255, 255);
