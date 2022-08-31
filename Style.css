@@ -150,7 +150,7 @@ padding:10px;
 }
 
 .footer-container {
-    padding: 10px 20px;
+    padding: 50px 20px;
     width: 100%;
     color: var(--pry-color);
 }
@@ -175,7 +175,7 @@ padding:10px;
 .grid-4 {
     display: grid;
     grid-template-columns: repeat(4, 200px);
-    gap: 10rem;
+    gap: 7rem;
 }
 .grid-3 {
     display: grid;
